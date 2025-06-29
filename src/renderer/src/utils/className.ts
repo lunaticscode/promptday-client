@@ -14,3 +14,5 @@ const cls = (prefixCls: string, suffixCls: SuffixCls) => {
   }
   return resultCls
 }
+
+export default cls

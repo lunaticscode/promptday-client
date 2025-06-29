@@ -23,6 +23,8 @@
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.1",
     "@electron-toolkit/utils": "^4.0.0",
+    "@hw-rui/calendar": "^0.1.3",
+    "@hw-rui/core": "^0.1.3",
     "node-llama-cpp": "^3.10.0",
     "react-router-dom": "^7.6.3"
   },
