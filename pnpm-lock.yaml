@@ -18,8 +18,11 @@ importers:
         specifier: ^0.1.3
         version: 0.1.3
       '@hw-rui/core':
-        specifier: ^0.1.3
-        version: 0.1.3
+        specifier: ^0.1.4
+        version: 0.1.4
+      '@hw-rui/tabs':
+        specifier: ^0.1.1
+        version: 0.1.1
       node-llama-cpp:
         specifier: ^3.10.0
         version: 3.10.0(typescript@5.8.3)
@@ -462,8 +465,11 @@ packages:
   '@hw-rui/calendar@0.1.3':
     resolution: {integrity: sha512-n3DReMCtw7RcvXjrb5k8jBHTXiSzI6NFn6PZityFyAOEyafrjB/QzDi4V6BSOR7TotPFBaFW7V5ptv38Q9Kilw==}
 
-  '@hw-rui/core@0.1.3':
-    resolution: {integrity: sha512-g7q0E3RD0+sLWRPFSr5kC0eZUzJB5OrIic2JaPW48hLU2A/55sB9y5SCzRXUtP1FF8RX3BkpyBPYf9P4LGcVHw==}
+  '@hw-rui/core@0.1.4':
+    resolution: {integrity: sha512-lYVLh7AaDX7zk1GFmieMPpoZTUvcXLa+d++QeUZdhAnzhHc4h1dSVJr9+Mv9lC3GZyeLp624lIJ2Y/C9mopWvQ==}
+
+  '@hw-rui/tabs@0.1.1':
+    resolution: {integrity: sha512-74FOu+U7kySk9dgidbMNjIzRohd86QxrUm6Hjr04mlVGGlvf4Yldbv4VdDJ9uMudkROPbkZe92CSXDg8evmz7A==}
 
   '@isaacs/balanced-match@4.0.1':
     resolution: {integrity: sha512-yzMTt9lEb8Gv7zRioUilSglI0c0smZ9k5D65677DLWLtWJaXIS3CqcGyUFByYKlnUj6TkjLVs54fBl6+TiGQDQ==}
@@ -3694,9 +3700,13 @@ snapshots:
 
   '@hw-rui/calendar@0.1.3':
     dependencies:
-      '@hw-rui/core': 0.1.3
+      '@hw-rui/core': 0.1.4
 
-  '@hw-rui/core@0.1.3': {}
+  '@hw-rui/core@0.1.4': {}
+
+  '@hw-rui/tabs@0.1.1':
+    dependencies:
+      '@hw-rui/core': 0.1.4
 
   '@isaacs/balanced-match@4.0.1': {}
 

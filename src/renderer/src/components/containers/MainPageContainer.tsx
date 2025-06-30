@@ -1,5 +1,6 @@
 import cls from '@renderer/utils/className'
-import CalendarRoot from '../common/Calendar/Root'
+import Calendar from '../common/Calendar/Root'
+import Tabs from '../common/Tabs'
 
 const PREFIX_CLS = 'mainpage-container'
 const headerCls = cls(PREFIX_CLS, 'header')
@@ -19,7 +20,8 @@ const MainPageContainer = () => {
       </div>
       <div className={contentCls}>
         <div className={calendarCls}>
-          <CalendarRoot />
+          <Calendar />
+          <Tabs />
         </div>
       </div>
     </>

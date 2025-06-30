@@ -1,10 +1,10 @@
-import Calendar from '@hw-rui/calendar'
-const CalendarRoot = () => {
+import RUICalendar from '@hw-rui/calendar'
+const Calendar = () => {
   return (
-    <Calendar>
-      <Calendar.Current />
-      <Calendar.Body />
-    </Calendar>
+    <RUICalendar>
+      <RUICalendar.Current />
+      <RUICalendar.Body />
+    </RUICalendar>
   )
 }
-export default CalendarRoot
+export default Calendar
