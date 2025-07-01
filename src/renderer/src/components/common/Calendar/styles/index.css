@@ -1,0 +1,65 @@
+.pd-calendar {
+}
+
+.pd-calendar-modes {
+}
+
+.pd-calendar-current {
+  background-color: var(--rs-gray-700);
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--rs-gray-200);
+}
+
+.pd-calendar-body {
+  background-color: var(--rs-gray-200);
+}
+
+.pd-calendar-body.hw-rui-calendar-body-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-top: 1px solid var(--rs-gray-400);
+}
+.pd-calendar-body.hw-rui-calendar-body-week:last-of-type {
+  border-bottom: 1px solid var(--rs-gray-200);
+}
+
+.pd-calendar-body.hw-rui-calendar-datecell {
+  min-height: 100px;
+  min-width: 60px;
+  color: var(--rs-gray-800);
+  border-right: 1px solid var(--rs-gray-400);
+  cursor: pointer;
+}
+
+div.pd-calendar-navigator {
+  text-align: right;
+  padding: 11px 0px;
+  margin-top: -44px;
+  margin-right: 10px;
+  display: flex;
+  column-gap: 10px;
+  justify-content: right;
+}
+div.pd-calendar-navigator > button {
+  color: white;
+  border: none;
+  background: var(--rs-gray-800);
+  cursor: pointer;
+}
+
+.pd-calendar-body.hw-rui-calendar-datecell:last-of-type {
+  border-right: none;
+}
+.pd-calendar-body.hw-rui-calendar-datecell:hover {
+  background-color: var(--rs-primary-400);
+  color: var(--rs-gray-100);
+}
+
+.pd-calendar-body[data-mode='week'] > .hw-rui-calendar-body-week {
+  grid-template-columns: repeat(7, 200px);
+  height: 500px;
+  overflow-x: auto;
+}

@@ -1,6 +1,7 @@
 import cls from '@renderer/utils/className'
-import Calendar from '../common/Calendar/Root'
-import Tabs from '../common/Tabs'
+import Calendar from '../common/Calendar'
+// import Tabs from '../common/Tabs'
+import './styles/main.container.css'
 
 const PREFIX_CLS = 'mainpage-container'
 const headerCls = cls(PREFIX_CLS, 'header')
@@ -21,7 +22,6 @@ const MainPageContainer = () => {
       <div className={contentCls}>
         <div className={calendarCls}>
           <Calendar />
-          <Tabs />
         </div>
       </div>
     </>

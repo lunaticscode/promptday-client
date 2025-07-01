@@ -1,0 +1,103 @@
+.mainpage-container {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: var(--rs-gray-800);
+  background: var(--rs-gray-50);
+  line-height: 1.5;
+}
+
+.mainpage-container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: var(--rs-gray-800);
+  border-bottom: 1px solid var(--rs-gray-800);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.mainpage-container-calendar-modes {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mainpage-container-calendar-modes button {
+  appearance: none;
+  border: 1px solid transparent;
+  background: var(--rs-gray-0, #ffffff);
+  color: var(--rs-gray-800);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.mainpage-container-calendar-modes button:hover {
+  background: var(--rs-gray-100, #f2f3f5);
+}
+
+.mainpage-container-calendar-modes button[aria-selected='true'] {
+  background: var(--rs-primary-50, #f2faff);
+  color: var(--rs-primary-700, #1675e0);
+  border-color: var(--rs-primary-300, #80c4ff);
+}
+
+.mainpage-container-add-event {
+}
+
+.mainpage-container-add-event button {
+  appearance: none;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--rs-gray-0, #ffffff);
+  background: var(--rs-primary-600, #3498ff);
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.mainpage-container-add-event button:hover {
+  background: var(--rs-primary-600, #2589f5);
+  box-shadow: 0 0 0 3px var(--rs-primary-100, #cce9ff);
+}
+
+.mainpage-container-add-event button:active {
+  background: var(--rs-primary-700, #1675e0);
+}
+
+.mainpage-container-content {
+  padding: 1.5rem;
+  background-color: var(--rs-gray-800);
+}
+
+.mainpage-container-calendar {
+  width: 100%;
+  border: 1px solid var(--rs-gray-200, #e5e5ea);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--rs-gray-0, #ffffff);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.mainpage-container-calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mainpage-container-calendar th,
+.mainpage-container-calendar td {
+  text-align: center;
+  padding: 0.75rem 0;
+  border: 1px solid var(--rs-gray-100, #f2f3f5);
+  font-size: 0.8125rem;
+}
+
+.mainpage-container-calendar td:is(:hover, .is-today) {
+  background: var(--rs-primary-50, #f2faff);
+}

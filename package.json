@@ -23,9 +23,10 @@
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.1",
     "@electron-toolkit/utils": "^4.0.0",
-    "@hw-rui/calendar": "^0.1.3",
+    "@hw-rui/calendar": "^0.1.4",
     "@hw-rui/core": "^0.1.4",
     "@hw-rui/tabs": "^0.1.1",
+    "better-sqlite3": "^12.2.0",
     "node-llama-cpp": "^3.10.0",
     "react-router-dom": "^7.6.3"
   },
@@ -33,6 +34,7 @@
     "@electron-toolkit/eslint-config-prettier": "^3.0.0",
     "@electron-toolkit/eslint-config-ts": "^3.0.0",
     "@electron-toolkit/tsconfig": "^1.0.1",
+    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^22.14.1",
     "@types/react": "^19.1.1",
     "@types/react-dom": "^19.1.2",
@@ -54,6 +56,9 @@
     "onlyBuiltDependencies": [
       "electron",
       "esbuild"
+    ],
+    "ignoredBuiltDependencies": [
+      "better-sqlite3"
     ]
   }
 }
