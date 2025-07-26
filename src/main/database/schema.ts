@@ -5,9 +5,14 @@ const initializeSchema = () => {
     CREATE TABLE IF NOT EXISTS "schedules" (
       "id" INTEGER PRIMARY KEY AUTOINCREMENT,
       "title" TEXT NOT NULL,
-      "content" TEXT,
       "startDate" TEXT NOT NULL,
-      "endDate" TEXT
+      "endDate" TEXT,
+      "description" TEXT,
+      "summary" TEXT,
+      "dates" TEXT,
+      "organizer" TEXT,
+      "location" TEXT,
+      "tags" TEXT,
     )
   `)
 }

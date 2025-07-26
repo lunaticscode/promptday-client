@@ -1,7 +1,10 @@
-import ipcScheduleHandler from './scheudle'
-import { getLlamaSession } from '../utils/llm'
-const ipcMainHandler = async () => {
-  const { scheduleModelSession } = await getLlamaSession()
-  ipcScheduleHandler(scheduleModelSession)
+import { oauthMainIpc, oauthRendererIpc } from './oauth.ipc'
+import { scheduleRendererIpc } from './schedule.ipc'
+export const mainIpc = {
+  ...oauthMainIpc
 }
-export default ipcMainHandler
+
+export const rendererIpc = {
+  ...oauthRendererIpc,
+  ...scheduleRendererIpc
+}

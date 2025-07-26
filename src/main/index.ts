@@ -1,9 +1,18 @@
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow, ipcMain } from 'electron'
 import { electronApp, optimizer } from '@electron-toolkit/utils'
 import './database/index'
 import initializeSchema from './database/schema'
-import ipcMainHandler from './ipc'
 import createWindow from './window'
+import { mainIpc } from './ipc'
+
+const registMainIpcHandler = () => {
+  // IPC test
+  ipcMain.on('ping', () => console.log('pong'))
+  for (const event in mainIpc) {
+    const ipcHandler = mainIpc[event]
+    ipcHandler() // regist main's ipc handler
+  }
+}
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
@@ -20,7 +29,6 @@ app.whenReady().then(async () => {
   })
   initializeSchema()
   createWindow()
-  await ipcMainHandler()
 
   app.on('activate', function () {
     // On macOS it's common to re-create a window in the app when the

@@ -28,6 +28,7 @@
     "@hw-rui/core": "^0.1.4",
     "@hw-rui/tabs": "^0.1.1",
     "better-sqlite3": "^12.2.0",
+    "dotenv": "^17.2.1",
     "node-llama-cpp": "^3.10.0",
     "react-router-dom": "^7.6.3"
   },
