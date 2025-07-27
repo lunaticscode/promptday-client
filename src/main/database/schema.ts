@@ -12,7 +12,7 @@ const initializeSchema = () => {
       "dates" TEXT,
       "organizer" TEXT,
       "location" TEXT,
-      "tags" TEXT,
+      "tags" TEXT
     )
   `)
 }

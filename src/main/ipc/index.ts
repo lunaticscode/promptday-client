@@ -1,7 +1,8 @@
 import { oauthMainIpc, oauthRendererIpc } from './oauth.ipc'
-import { scheduleRendererIpc } from './schedule.ipc'
+import { scheduleMainIpc, scheduleRendererIpc } from './schedule.ipc'
 export const mainIpc = {
-  ...oauthMainIpc
+  ...oauthMainIpc,
+  ...scheduleMainIpc
 }
 
 export const rendererIpc = {

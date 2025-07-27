@@ -2,10 +2,12 @@ const SCHEDULE_EVENT_PREFIX = 'schedule'
 const OAUTH_EVENT_PREFIX = 'oauth'
 
 const SCHEDULE_EVENTS = {
-  REQUEST_SCHEUDLE_LIST: `${SCHEDULE_EVENT_PREFIX}:scheudle-list:request`,
-  REQUEST_SCHEUDLE: `${SCHEDULE_EVENT_PREFIX}:scheudle-one:request`,
-  ON_SCHEUDLE_LIST: `${SCHEDULE_EVENT_PREFIX}:scheudle-list:response`,
-  ON_SCHEUDLE: `${SCHEDULE_EVENT_PREFIX}:scheudle-one:response`
+  REQUEST_SCHEDULE_LIST: `${SCHEDULE_EVENT_PREFIX}:schedule-list:request`,
+  REQUEST_SCHEDULE: `${SCHEDULE_EVENT_PREFIX}:schedule-one:request`,
+  REQUEST_EXTRACT_SCHEDULE: `${SCHEDULE_EVENT_PREFIX}:extract-schedule:request`,
+  ON_SCHEUDLE_LIST: `${SCHEDULE_EVENT_PREFIX}:schedule-list:response`,
+  ON_SCHEUDLE: `${SCHEDULE_EVENT_PREFIX}:schedule-one:response`,
+  ON_EXTRACT_SCHEDULE: `${SCHEDULE_EVENT_PREFIX}:extract-schedule:response`
 }
 
 const OAUTH_EVENTS = {

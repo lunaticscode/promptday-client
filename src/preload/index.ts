@@ -1,8 +1,13 @@
 import { contextBridge } from 'electron'
 import { electronAPI } from '@electron-toolkit/preload'
+import { scheduleRendererIpc } from '../main/ipc/schedule.ipc'
+import { oauthRendererIpc } from '../main/ipc/oauth.ipc'
 
 // Custom APIs for renderer
-const api = {}
+const api = {
+  ...oauthRendererIpc,
+  ...scheduleRendererIpc
+}
 
 // Use `contextBridge` APIs to expose Electron APIs to
 // renderer only if context isolation is enabled, otherwise
